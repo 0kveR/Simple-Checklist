@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+  <link type="image/png" sizes="32x32" rel="icon" href="./res/icons8-checklist-32.png">
+  <!-- <a target="_blank" href="https://icons8.com/icon/103760/checklist">Checklist</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a> -->
+  <title>Simple Checklist</title>
+</head>
+<body>
+  <div id="container">
+    <h1 id="header">Simple Checklist</h1>
+    
+    <hr class="line">
+    <div id="inputSection">
+      <input type="text" id="taskName" class="textInput" placeholder="Enter Task Name">
+      <button id="addTaskBtn" onclick="addTask()">Add Task</button>
+    </div>
+    <textarea id="taskDescription" class="textInput" placeholder="Enter Description (optional)"></textarea>
+    <hr class="line">
+
+    <div id="taskList"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
+<!-- 
+  GOALS
+    - Users can add a 'task' with a name, description, and category
+    - Categories should be grouped together and assigned a unique color
+    - Users can check tasks as complete
+    - Users can remove a task at any time
+    - Users can use a 'remove completed' button to remove all completed tasks
+    - Users can export data as a JSON file
+    - Users can import data from a JSON file
+ -->

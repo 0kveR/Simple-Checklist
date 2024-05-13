@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  height: 100vh;
+  /* background: #141E30;
+  background: linear-gradient(135deg, #243B55, #141E30); */
+  background: rgb(44,62,80);
+  background: linear-gradient(315deg, rgba(44,62,80,1) 0%, rgba(88,80,113,1) 34%, rgba(166,86,136,1) 63%, rgba(253,116,108,1) 100%); 
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+#container{
+  width: 100%;
+  max-width: 600px;
+  height: fit-content;
+  background: #fff8eb;
+  margin: 10vh auto;
+  padding: 40px 30px 40px;
+  border-radius: 10px;
+}
+
+#header{
+  margin: 10px auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  font-style: italic;
+}
+
+#emptyLabel{
+  margin: 10px auto;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  font-style: italic;
+}
+
+.tasklist {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+}
+
+.taskMain {
+  background-color: hsl(142, 100%, 86%);
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  margin: 10px auto;
+  padding: 18px;
+  width: 80%;
+  border: none;
+  border-radius: 20px;
+  text-align: left;
+  outline: none;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.taskMain:hover {
+  background-color: hsl(142, 100%, 70%);
+}
+
+.taskMain.checked {
+  text-decoration: line-through;
+}
+
+.taskTitle {
+  margin-left: 5px;
+}
+
+.deleteBtn {
+  float: right;
+  width: 20px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.deleteBtn:hover {
+  background-color: hsla(0, 0%, 0%, 0.13);
+  color: hsl(350, 100%, 50%);
+}
+
+.taskContent {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px 10px 0px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: hsl(142, 100%, 86% / 0);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#inputSection {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+#addTaskBtn {
+  padding: 10px 15px;
+  margin: 5px 0 5px 10px;
+  border: 0;
+  max-width: fit-content;
+  background-color: #d3ffec;
+  border-radius: 5px;
+}
+
+#addTaskBtn:hover {
+  background-color: #80edbe;
+}
+
+.textInput {
+  box-sizing: border-box;
+  padding: 10px 15px;
+  margin: 5px auto;
+  max-width: 600px;
+  background-color: #ebedff;
+  border: 0;
+  border-radius: 5px;
+  flex: 1;
+}
+
+#taskDescription {
+  width: 100%;
+  resize: vertical;
+}
